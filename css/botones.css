@@ -1,0 +1,19 @@
+.separacion-botones {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.color-ps4 {
+    background-color: blue;
+    color: white;
+}
+
+.color-xbox {
+    background-color: green;
+    color: white;
+}
+
+.color-ps4-xbox {
+    background: linear-gradient(to bottom right, blue 50%, green 50%);
+    color: white;
+}

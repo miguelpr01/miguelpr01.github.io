@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/cabecera.css" rel="stylesheet">
+    <link href="css/botones.css" rel="stylesheet">
+    <link href="css/valoracion.css" rel="stylesheet">
+    <link href="css/paginacion.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Los juegos más vendidos de consola</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="top6_ps4.html">Play Station 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top6_xbox.html">Xbox One</a>
+                </li>
+            </ul>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="index.html" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="pagina3.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="pagina3.html" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+
+                    <div id="carousel-uncharted4" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="ps4\uncharted4_1.png" class="card-img-top" alt="uncharted4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="ps4\uncharted4_2.png" class="card-img-top" alt="uncharted4">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-uncharted4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-uncharted4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="accordion-uncharted4">
+                        <div class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse-uncharted4" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapse-uncharted4">
+                                Uncharted 4: A Thief's End
+                            </button>
+                            <div id="panelsStayOpen-collapse-uncharted4" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-heading-uncharted4">
+                                <div class="accordion-body">
+                                    <p class="card-text"><strong>Total de copias vendidas:</strong> 17,50 millones
+                                        <br>
+                                        <strong>Género:</strong> Acción-aventura, Disparos en tercera persona
+                                        <br>
+                                        <strong>Desarrollador:</strong> Naughty Dog
+                                        <br>
+                                        <strong>Distribuidor:</strong> Sony Interactive Entertainment
+                                        <br>
+                                        <strong>Plataforma:</strong> Play Station 4
+                                    </p>
+
+                                    <div class="dropdown">
+                                        <a class="btn color-ps4 dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Más información
+                                        </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item"
+                                                    href="https://www.playstation.com/es-es/uncharted/"
+                                                    target="_blank">Página del juego</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="https://www.youtube.com/watch?v=34GJ9ZMAKqA"
+                                                    target="_blank">Trailer</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="1-uncharted4"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="2-uncharted4"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="3-uncharted4"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="4-uncharted4"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="5-uncharted4"></i>
+                                        <i id="liveAlertPlaceholder-uncharted4"></i>
+                                        <button type="button" class="btn color-ps4" onclick="valorar(this)"
+                                            id="liveAlertBtn-uncharted4">Valorar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+
+                    <div id="carousel-codbo3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="ps4\codbo3_1.png" class="card-img-top" alt="codbo3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="ps4\codbo3_2.png" class="card-img-top" alt="codbo3">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-codbo3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-codbo3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="accordion-codbo3">
+                        <div class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse-codbo3" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapse-codbo3">
+                                Call of Duty: Black Ops III
+                            </button>
+                            <div id="panelsStayOpen-collapse-codbo3" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-heading-codbo3">
+                                <div class="accordion-body">
+                                    <p class="card-text"><strong>Total de copias vendidas:</strong> 17,57 millones
+                                        <br>
+                                        <strong>Género:</strong> Disparos en primera persona, Acción, Cyberpunk
+                                        <br>
+                                        <strong>Desarrollador:</strong> Treyarch
+                                        <br>
+                                        <strong>Distribuidor:</strong> Activision
+                                        <br>
+                                        <strong>Plataforma:</strong> Play Station 4, Xbox One
+                                    </p>
+
+                                    <div class="dropdown">
+                                        <a class="btn color-ps4-xbox dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Más información
+                                        </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="https://www.callofduty.com/es/blackops3"
+                                                    target="_blank">Página del juego</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="https://www.youtube.com/watch?v=qAUYNIDEJ6o"
+                                                    target="_blank">Trailer</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="1-codbo3"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="2-codbo3"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="3-codbo3"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="4-codbo3"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="5-codbo3"></i>
+                                        <i id="liveAlertPlaceholder-codbo3"></i>
+                                        <button type="button" class="btn color-ps4-xbox" onclick="valorar(this)"
+                                            id="liveAlertBtn-codbo3">Valorar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+
+                    <div id="carousel-rdr2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="ps4\rdr2_1.png" class="card-img-top" alt="rdr2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="ps4\rdr2_2.png" class="card-img-top" alt="rdr2">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-rdr2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-rdr2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="accordion-rdr2">
+                        <div class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse-rdr2" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapse-rdr2">
+                                Red Dead Redemption 2
+                            </button>
+                            <div id="panelsStayOpen-collapse-rdr2" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-heading-rdr2">
+                                <div class="accordion-body">
+                                    <p class="card-text"><strong>Total de copias vendidas:</strong> 15,77 millones
+                                        <br>
+                                        <strong>Género:</strong> Acción-Aventura, Mundo abierto, Disparos en primera
+                                        persona, Disparos en tercera persona
+                                        <br>
+                                        <strong>Desarrollador:</strong> Rockstar Games
+                                        <br>
+                                        <strong>Distribuidor:</strong> Rockstar Games
+                                        <br>
+                                        <strong>Plataforma:</strong> Play Station 4, Xbox One
+                                    </p>
+
+                                    <div class="dropdown">
+                                        <a class="btn color-ps4-xbox dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Más información
+                                        </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item"
+                                                    href="https://www.rockstargames.com/reddeadredemption2/"
+                                                    target="_blank">Página del juego</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="https://www.youtube.com/watch?v=gmA6MrX81z4"
+                                                    target="_blank">Trailer</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="1-rdr2"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="2-rdr2"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="3-rdr2"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="4-rdr2"></i>
+                                        <i class="bi bi-star-fill star" onclick="calificar(this)" id="5-rdr2"></i>
+                                        <i id="liveAlertPlaceholder-rdr2"></i>
+                                        <button type="button" class="btn color-ps4-xbox" onclick="valorar(this)"
+                                            id="liveAlertBtn-rdr2">Valorar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/funciones.js"></script>
+</body>
+
+</html>
